@@ -5,20 +5,20 @@
 class Efmrl < Formula
   desc ""
   homepage "https://github.com/efmrl/homebrew-cli"
-  version "0.9.5"
+  version "0.9.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/efmrl/cli2/releases/download/v0.9.5/cli2_Darwin_x86_64.tar.gz"
-      sha256 "07b4a08538b8e0d097113ba4161f53b3b3bfed8fe2476ede4661795e5325ec85"
+      url "https://github.com/efmrl/cli2/releases/download/v0.9.6/cli2_Darwin_x86_64.tar.gz"
+      sha256 "a5d87a532038ef9c8298ab5a719652741851e8c772ff0d1c958af6494723b382"
 
       def install
         bin.install "efmrl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/efmrl/cli2/releases/download/v0.9.5/cli2_Darwin_arm64.tar.gz"
-      sha256 "1fe230ee8c5c3c572ae984c3f62bbad258a69998630ee8482049822706322508"
+      url "https://github.com/efmrl/cli2/releases/download/v0.9.6/cli2_Darwin_arm64.tar.gz"
+      sha256 "bc29588f67732198e2bf8016ccf54d5d4a2a680005f1533696ce954b53df0951"
 
       def install
         bin.install "efmrl"
@@ -29,8 +29,8 @@ class Efmrl < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/efmrl/cli2/releases/download/v0.9.5/cli2_Linux_x86_64.tar.gz"
-        sha256 "f30eb99d289d955eee4aef4e4f11e3c08562e9a239e62fbc41a8e260bac54f3a"
+        url "https://github.com/efmrl/cli2/releases/download/v0.9.6/cli2_Linux_x86_64.tar.gz"
+        sha256 "ab5b3fb10d3d4e82f92bd887d9a97790f464334a9e71b4e3f96885e288c5bd9d"
 
         def install
           bin.install "efmrl"
@@ -39,8 +39,8 @@ class Efmrl < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/efmrl/cli2/releases/download/v0.9.5/cli2_Linux_arm64.tar.gz"
-        sha256 "47ef77b6b08eaf8a99582ddb64ae97fe7a32461aad42ed64f939582fbca4bbd2"
+        url "https://github.com/efmrl/cli2/releases/download/v0.9.6/cli2_Linux_arm64.tar.gz"
+        sha256 "c6b603cbce06f7716e3ab61c6ef6df9f22ba8ae60acc48c1897af4467c0023b2"
 
         def install
           bin.install "efmrl"
