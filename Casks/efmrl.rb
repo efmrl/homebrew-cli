@@ -2,7 +2,7 @@
 cask "efmrl" do
   desc ""
   homepage "https://github.com/efmrl/homebrew-cli"
-  version "0.9.15"
+  version "0.9.16"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "efmrl" do
 
   on_macos do
     on_intel do
-      url "https://github.com/efmrl/cli2/releases/download/v0.9.15/cli2_Darwin_x86_64.tar.gz"
-      sha256 "cc28dc2eb8ee36affdb6a25583f7d404f504758ae1347a9106baee654730b874"
+      url "https://github.com/efmrl/cli2/releases/download/v0.9.16/cli2_Darwin_x86_64.tar.gz"
+      sha256 "7824b98ca417e94a503e9a2122408033753770aabdc43e305e4bce5489700dde"
     end
     on_arm do
-      url "https://github.com/efmrl/cli2/releases/download/v0.9.15/cli2_Darwin_arm64.tar.gz"
-      sha256 "31b9b7c4b56194dfe695c0400152e843d1497f88cf892f46b5cf6c1fd94e4eaa"
+      url "https://github.com/efmrl/cli2/releases/download/v0.9.16/cli2_Darwin_arm64.tar.gz"
+      sha256 "95cd57cb25833cb84a50a4fddeaff71128c46e955dca098f278db6c5cf969f76"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/efmrl/cli2/releases/download/v0.9.15/cli2_Linux_x86_64.tar.gz"
-      sha256 "23b91257cf2c15b83d794bd0927e2580de1a7aebb660ac6621dd0b75eb388306"
+      url "https://github.com/efmrl/cli2/releases/download/v0.9.16/cli2_Linux_x86_64.tar.gz"
+      sha256 "b16bfbe2303214d2d960656281be3bcd8f3d7a6dbafbeb3a45b7aca043542b58"
     end
     on_arm do
-      url "https://github.com/efmrl/cli2/releases/download/v0.9.15/cli2_Linux_arm64.tar.gz"
-      sha256 "3bbb40580ee00de50cf8747b79d91f1ed5b7153aba738a8a1aa07acc273830df"
+      url "https://github.com/efmrl/cli2/releases/download/v0.9.16/cli2_Linux_arm64.tar.gz"
+      sha256 "0bfa6977e058037b4f0e38876526273231f2f7a4900f495db14484b0cd3cde7b"
     end
   end
 
