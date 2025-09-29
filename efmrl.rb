@@ -5,20 +5,20 @@
 class Efmrl < Formula
   desc ""
   homepage "https://github.com/efmrl/homebrew-cli"
-  version "0.9.23"
+  version "0.9.24"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/efmrl/cli2/releases/download/v0.9.23/cli2_Darwin_x86_64.tar.gz"
-      sha256 "7ed905fdca90f088a3d8182732dd49d3f01abae97d633a72f210ae03e1cd4bfb"
+      url "https://github.com/efmrl/cli2/releases/download/v0.9.24/cli2_Darwin_x86_64.tar.gz"
+      sha256 "0ac7d022eab2e4cfc17123dc1a264970c60828fc1fce5c5492bfe29086635881"
 
       def install
         bin.install "efmrl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/efmrl/cli2/releases/download/v0.9.23/cli2_Darwin_arm64.tar.gz"
-      sha256 "02861b33ea5eaec1c836412cf433df19712ce0d4bb989f04fdd8cca120fd849e"
+      url "https://github.com/efmrl/cli2/releases/download/v0.9.24/cli2_Darwin_arm64.tar.gz"
+      sha256 "21d4b03ba9a7ed7b775a419b35dffccab74cc4d3c380d9c37b344851fbac4d94"
 
       def install
         bin.install "efmrl"
@@ -28,15 +28,15 @@ class Efmrl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli2/releases/download/v0.9.23/cli2_Linux_x86_64.tar.gz"
-      sha256 "7aa7d4bd8c96eee09ecc69d1afc418e7170ab06f73d91f1837e672b3aa2228ea"
+      url "https://github.com/efmrl/cli2/releases/download/v0.9.24/cli2_Linux_x86_64.tar.gz"
+      sha256 "cb42788d09599680585c54acad6524031b235d9262403715b8ce49d8ed6a247a"
       def install
         bin.install "efmrl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli2/releases/download/v0.9.23/cli2_Linux_arm64.tar.gz"
-      sha256 "32249695a7712fb8b9d07c3a339a2ce2d93cfadc181ad23f16d00eed774cb1a6"
+      url "https://github.com/efmrl/cli2/releases/download/v0.9.24/cli2_Linux_arm64.tar.gz"
+      sha256 "c33cbb8a4774a1977d1ed926cec5165b4feacae2a7b0857ab18f8fab7638f027"
       def install
         bin.install "efmrl"
       end
