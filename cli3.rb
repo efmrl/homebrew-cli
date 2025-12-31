@@ -5,20 +5,20 @@
 class Cli3 < Formula
   desc "CLI for efmrl ephemeral web site hosting"
   homepage "https://github.com/efmrl/cli3"
-  version "0.6.0"
+  version "0.7.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/efmrl/cli3/releases/download/v0.6.0/cli3_Darwin_x86_64.tar.gz"
-      sha256 "af75b2c33f23c8860d8bc73eb0db31e930565ec684807ec892b0a82eb96e4796"
+      url "https://github.com/efmrl/cli3/releases/download/v0.7.0/cli3_Darwin_x86_64.tar.gz"
+      sha256 "5c16270ea59a5591220785f08630bc45d894a01005f92bb2aaa5d75fd8a24d1d"
 
       def install
         bin.install "efmrl3"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/efmrl/cli3/releases/download/v0.6.0/cli3_Darwin_arm64.tar.gz"
-      sha256 "e18ab3b36a0294a67ae055754bb97ccebfe60003bb66720eb94d65486572f590"
+      url "https://github.com/efmrl/cli3/releases/download/v0.7.0/cli3_Darwin_arm64.tar.gz"
+      sha256 "4444b491fd2fc7869c21d756f6fc855bde29fba8d3ea693217fc2687d4edc5cf"
 
       def install
         bin.install "efmrl3"
@@ -28,15 +28,15 @@ class Cli3 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli3/releases/download/v0.6.0/cli3_Linux_x86_64.tar.gz"
-      sha256 "f2e3816d63799fc00aa9b799be90a2874e77707733d36623ee6b1b12a0b41199"
+      url "https://github.com/efmrl/cli3/releases/download/v0.7.0/cli3_Linux_x86_64.tar.gz"
+      sha256 "8f150d031e066d205d74c56103f31f0119c868078c0197374cca1db55e47da1f"
       def install
         bin.install "efmrl3"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli3/releases/download/v0.6.0/cli3_Linux_arm64.tar.gz"
-      sha256 "f2b3ed071e7d0989998afadd0a94ea983eca6824d6f7e276eb67b31aacdc0e8b"
+      url "https://github.com/efmrl/cli3/releases/download/v0.7.0/cli3_Linux_arm64.tar.gz"
+      sha256 "f74be62898afc2ae525c86a7327cc63466edebe90f0127889876e29fa8ad2b6c"
       def install
         bin.install "efmrl3"
       end
