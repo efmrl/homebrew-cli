@@ -5,20 +5,20 @@
 class Cli3 < Formula
   desc "CLI for efmrl ephemeral web site hosting"
   homepage "https://github.com/efmrl/cli3"
-  version "0.9.0"
+  version "0.10.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/efmrl/cli3/releases/download/v0.9.0/cli3_Darwin_x86_64.tar.gz"
-      sha256 "7a45185e7db0758d9479071d0c94437915b0158759bcc53dd5434b26d60e75d2"
+      url "https://github.com/efmrl/cli3/releases/download/v0.10.0/cli3_Darwin_x86_64.tar.gz"
+      sha256 "ad87b7adf657efbba899ac1b4b2c1bab7173088e95fe14fca5e9a33a5960e0bb"
 
       def install
         bin.install "efmrl3"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/efmrl/cli3/releases/download/v0.9.0/cli3_Darwin_arm64.tar.gz"
-      sha256 "d3d424185e9fe7f772f7dcdc22c8175d6a9d677c89910cc89cae80907667c38c"
+      url "https://github.com/efmrl/cli3/releases/download/v0.10.0/cli3_Darwin_arm64.tar.gz"
+      sha256 "6ed2cbba1faea88ec70744d4c7594e08bb22fa0188f161e29f72dca89c62153a"
 
       def install
         bin.install "efmrl3"
@@ -28,15 +28,15 @@ class Cli3 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli3/releases/download/v0.9.0/cli3_Linux_x86_64.tar.gz"
-      sha256 "43cae48811b761db86082f52d4a459e39f6a21df1e87681891a56af91987ed7c"
+      url "https://github.com/efmrl/cli3/releases/download/v0.10.0/cli3_Linux_x86_64.tar.gz"
+      sha256 "484f13783481d35e49aa7ccf93993ed527e44f64b09669df32e6ca835425cd03"
       def install
         bin.install "efmrl3"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli3/releases/download/v0.9.0/cli3_Linux_arm64.tar.gz"
-      sha256 "144a22f6b682729971de1d8697f6c6eb42384dcd41f5b5e994915887866775df"
+      url "https://github.com/efmrl/cli3/releases/download/v0.10.0/cli3_Linux_arm64.tar.gz"
+      sha256 "52d6ffbfe77d796f357187c921ec2bd2d62014bc5bfe83acc4387587d0bd04a1"
       def install
         bin.install "efmrl3"
       end
