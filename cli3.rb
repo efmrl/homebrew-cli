@@ -5,20 +5,20 @@
 class Cli3 < Formula
   desc "CLI for efmrl ephemeral web site hosting"
   homepage "https://github.com/efmrl/cli3"
-  version "0.10.0"
+  version "0.11.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/efmrl/cli3/releases/download/v0.10.0/cli3_Darwin_x86_64.tar.gz"
-      sha256 "ad87b7adf657efbba899ac1b4b2c1bab7173088e95fe14fca5e9a33a5960e0bb"
+      url "https://github.com/efmrl/cli3/releases/download/v0.11.0/cli3_Darwin_x86_64.tar.gz"
+      sha256 "dc6354b0ff2ec964f1c8e0d7f940a524088b09f88fbf35c2fc324b4f8b7391fa"
 
       def install
         bin.install "efmrl3"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/efmrl/cli3/releases/download/v0.10.0/cli3_Darwin_arm64.tar.gz"
-      sha256 "6ed2cbba1faea88ec70744d4c7594e08bb22fa0188f161e29f72dca89c62153a"
+      url "https://github.com/efmrl/cli3/releases/download/v0.11.0/cli3_Darwin_arm64.tar.gz"
+      sha256 "86380caff673dff025d3e1cd961cd345a88849aa5288420b3410755a96f0037e"
 
       def install
         bin.install "efmrl3"
@@ -28,15 +28,15 @@ class Cli3 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli3/releases/download/v0.10.0/cli3_Linux_x86_64.tar.gz"
-      sha256 "484f13783481d35e49aa7ccf93993ed527e44f64b09669df32e6ca835425cd03"
+      url "https://github.com/efmrl/cli3/releases/download/v0.11.0/cli3_Linux_x86_64.tar.gz"
+      sha256 "193c15786df0f958f4844467b2ff10c79c1e838634832473d7871d86b3ae8ad8"
       def install
         bin.install "efmrl3"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli3/releases/download/v0.10.0/cli3_Linux_arm64.tar.gz"
-      sha256 "52d6ffbfe77d796f357187c921ec2bd2d62014bc5bfe83acc4387587d0bd04a1"
+      url "https://github.com/efmrl/cli3/releases/download/v0.11.0/cli3_Linux_arm64.tar.gz"
+      sha256 "ddbfde4fa290f3124ef44354bf6aaac2011c8b04f7f9fdb7251e585301598f5b"
       def install
         bin.install "efmrl3"
       end
