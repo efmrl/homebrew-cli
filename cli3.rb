@@ -5,20 +5,20 @@
 class Cli3 < Formula
   desc "CLI for efmrl ephemeral web site hosting"
   homepage "https://github.com/efmrl/cli3"
-  version "0.18.0"
+  version "0.19.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/efmrl/cli3/releases/download/v0.18.0/cli3_Darwin_x86_64.tar.gz"
-      sha256 "cf32b93533221409325bcc12de1ae8eed4bc7c04ffba6b8014590370f55cf8d7"
+      url "https://github.com/efmrl/cli3/releases/download/v0.19.0/cli3_Darwin_x86_64.tar.gz"
+      sha256 "ac2f9db6ab81d2193c3be4b485be22584cfac6f1d36162dabd0e8cc06725208e"
 
       define_method(:install) do
         bin.install "efmrl3"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/efmrl/cli3/releases/download/v0.18.0/cli3_Darwin_arm64.tar.gz"
-      sha256 "986a3a037d23c3299d1ae9aff872910fd4ac41d59d87bc4bc766aef4c069063a"
+      url "https://github.com/efmrl/cli3/releases/download/v0.19.0/cli3_Darwin_arm64.tar.gz"
+      sha256 "6c6dd4fc9c5cac17279482761c1b2956a020d05cc5dfe24901bdaa2a38378194"
 
       define_method(:install) do
         bin.install "efmrl3"
@@ -28,15 +28,15 @@ class Cli3 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli3/releases/download/v0.18.0/cli3_Linux_x86_64.tar.gz"
-      sha256 "afb6438fad949d638fc05298b8f5444bdab6b071bd2befa0333d15d72b3157b7"
+      url "https://github.com/efmrl/cli3/releases/download/v0.19.0/cli3_Linux_x86_64.tar.gz"
+      sha256 "1fc7fab5e79bed93410a8a0594c52690024fc057e0b13c8c7b29290601e0bb3a"
       define_method(:install) do
         bin.install "efmrl3"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli3/releases/download/v0.18.0/cli3_Linux_arm64.tar.gz"
-      sha256 "02926f251045bc67be5fb9d35d8f9fb7ad743137bae4311bd00cb6555c1fa7d6"
+      url "https://github.com/efmrl/cli3/releases/download/v0.19.0/cli3_Linux_arm64.tar.gz"
+      sha256 "8dd7d16c93ac85360fddc9d2bb06516eecd42e032ec4339f34713bd188886b6d"
       define_method(:install) do
         bin.install "efmrl3"
       end
