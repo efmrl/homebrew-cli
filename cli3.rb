@@ -5,22 +5,22 @@
 class Cli3 < Formula
   desc "CLI for efmrl ephemeral web site hosting"
   homepage "https://github.com/efmrl/cli3"
-  version "0.15.0"
+  version "0.16.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/efmrl/cli3/releases/download/v0.15.0/cli3_Darwin_x86_64.tar.gz"
-      sha256 "385d24fccb7139560a2221da5b1bb690efe0a2d224d96217f173c9168fa69bbd"
+      url "https://github.com/efmrl/cli3/releases/download/v0.16.0/cli3_Darwin_x86_64.tar.gz"
+      sha256 "e49a85735f65896ca7f599e62c4edb2e1d9d05082915cfa18f8ff6839ab5580c"
 
-      def install
+      define_method(:install) do
         bin.install "efmrl3"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/efmrl/cli3/releases/download/v0.15.0/cli3_Darwin_arm64.tar.gz"
-      sha256 "96561219d2d4deafca45a4540d6519263aa47983524a6d513243ecf23498b0b9"
+      url "https://github.com/efmrl/cli3/releases/download/v0.16.0/cli3_Darwin_arm64.tar.gz"
+      sha256 "36733bda10addcf42525d88f5495a6403ce5316ceab0d4c28c177934179a0a3e"
 
-      def install
+      define_method(:install) do
         bin.install "efmrl3"
       end
     end
@@ -28,16 +28,16 @@ class Cli3 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli3/releases/download/v0.15.0/cli3_Linux_x86_64.tar.gz"
-      sha256 "1cf18f861827f1987f6475205f791ecd55da38b3d0468ac5c8614be8e25d38c0"
-      def install
+      url "https://github.com/efmrl/cli3/releases/download/v0.16.0/cli3_Linux_x86_64.tar.gz"
+      sha256 "9984c751c75ccec7ff712047d9ad845bc7f17894750b2330522e76f897ba2d2b"
+      define_method(:install) do
         bin.install "efmrl3"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/efmrl/cli3/releases/download/v0.15.0/cli3_Linux_arm64.tar.gz"
-      sha256 "85e6fcb2d16a9c20b460b54456bceef5147ad20c38f97b2a73075498fa84b499"
-      def install
+      url "https://github.com/efmrl/cli3/releases/download/v0.16.0/cli3_Linux_arm64.tar.gz"
+      sha256 "6bac1f9df4e27f871bdb8c0b81d9d6b44e9ed7c3aadc552f922b20b1811e66bd"
+      define_method(:install) do
         bin.install "efmrl3"
       end
     end
